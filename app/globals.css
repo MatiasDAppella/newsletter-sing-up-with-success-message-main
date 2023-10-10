@@ -12,15 +12,6 @@
   src: url('/assets/fonts/Roboto-Regular.ttf');
 }
 
-:root {
-  --clr-primary-tomato: hsl(4, 100%, 67%);
-
-  --clr-neutral-grey-900: hsl(234, 29%, 20%);
-  --clr-neutral-grey-600: hsl(235, 18%, 26%);
-  --clr-neutral-grey-300: hsl(231, 7%, 60%);
-  --clr-neutral-white: hsl(0, 0%, 100%);
-}
-
 @layer components {
   .roboto-regular {
     font-family: 'Roboto-Regular', sans-serif;
@@ -33,6 +24,12 @@
 }
 
 @layer base {
-  body { @apply roboto-regular }
+  body {
+    box-sizing: border-box;
+    height: 100vh;
+    display: grid;
+    place-items: center;
+    @apply roboto-regular bg-clr-neutral-600 text-clr-neutral-900
+  }
   p { font-size: 16px }
 }

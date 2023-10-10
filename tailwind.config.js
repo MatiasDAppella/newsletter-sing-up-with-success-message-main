@@ -9,6 +9,15 @@ module.exports = {
     './src/**/*.{js,ts,jsx,tsx,mdx}',
   ],
   theme: {
+    colors: {
+      'clr-primary': 'hsl(4, 100%, 67%);',
+      'clr-neutral': {
+        900: 'hsl(234, 29%, 20%);',
+        600: 'hsl(235, 18%, 26%);',
+        300: 'hsl(231, 7%, 60%);',
+      },
+      'clr-white': 'hsl(0, 0%, 100%);',
+    },
     extend: {},
   },
   plugins: [],
